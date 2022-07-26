@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "SNR4uL7CnDNpcAJy8Ke6i6ZNcsT07n34rxRG4hBr9s6pzLrqOQhkSvPOx2iMBHlTWoFKTUuVmyqx0EmI2gHxFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mjpra\\Documents\\GCU\\CST 391\\Milestone\\Product Store\\ProductStore\\ProductStore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mjpra\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
