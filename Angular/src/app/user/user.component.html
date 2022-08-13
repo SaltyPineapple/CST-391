@@ -1,0 +1,55 @@
+<p>All Users</p>
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+        
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </table>
+</div>
+<br>
+<p>Get User By ID</p>
+<br>
+<div>
+    <form [formGroup]="appForm" (ngSubmit)="getUserById(appForm.value)">
+        <input type="text" class="form-control" formControlName="id">
+        <button type="submit" class="btn btn-success">Get User</button>
+    </form>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+        </tr>
+        
+        <tr>
+            <td>{{specificUser.id}}</td>
+            <td>{{specificUser.name}}</td>
+            <td>{{specificUser.password}}</td>
+            <td>{{specificUser.email}}</td>
+        </tr>
+    </table>
+</div>
+
+<br>
+<p>Create User</p>
+<br>
+
+<div>
+    <form [formGroup]="createForm" (ngSubmit)="createUser(createForm.value)">
+        <input type="text" class="form-control" formControlName="username" placeholder="Username">
+        <input type="text" class="form-control" formControlName="password" placeholder="Password">
+        <input type="text" class="form-control" formControlName="email" placeholder="Email">
+        <button type="submit" class="btn btn-success">Create User</button>
+    </form>
+</div>
