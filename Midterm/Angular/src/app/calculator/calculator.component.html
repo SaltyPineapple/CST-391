@@ -1,0 +1,24 @@
+<h1>Calculator</h1>
+<div>
+    <form [formGroup]="CalculatorForm" (ngSubmit)="Calculate(CalculatorForm.value)">
+        <input type="text" class="form-control" formControlName="operand1" placeholder="Operand 1">
+        <br>
+        <input type="text" class="form-control" formControlName="operand2" placeholder="Operand 2">
+        <br>
+        <input type="radio" formControlName="operator" id="Add" value="+">
+        <label for="Add">Add</label>
+        <br>
+        <input type="radio" formControlName="operator" id="Subtract" value="-">
+        <label for="Subtract">Subtract</label>
+        <br>
+        <input type="radio" formControlName="operator" id="Multiply" value="*">
+        <label for="Multiply">Multiply</label>
+        <br>
+        <input type="radio" formControlName="operator" id="Divide" value="/">
+        <label for="Divide">Divide</label>
+        <br>
+        <button type="submit" class="btn btn-success">Calculate</button>
+    </form>
+
+    <app-result [result]='calculation.result'></app-result>
+</div>
